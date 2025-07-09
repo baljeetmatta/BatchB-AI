@@ -25,8 +25,8 @@
     */
     // var f=3.4;
     // var x=Math.floor(f);
-  //  var x = "20.4";
-   // var y = 10;
+    //  var x = "20.4";
+    // var y = 10;
     //number+number=add
     //String+string=concat
     //string+number=concat
@@ -126,18 +126,18 @@ boolean =int
     }
     sum(3,4,5);
     */
-    function display() {
-      console.log("Display called...");
+    // function display() {
+    //   console.log("Display called...");
 
-    }
-    //display();
-    //console.log(display());
-    //let result=display();
-    //console.log(result);
-    function sum(x, y) {
-      return x + y;
+    // }
+    // //display();
+    // //console.log(display());
+    // //let result=display();
+    // //console.log(result);
+    // function sum(x, y) {
+    //   return x + y;
 
-    }
+    // }
     //let result=sum(3,4);
     //console.log(result);
     //console.log(sum(3,40));
@@ -234,79 +234,151 @@ boolean =int
 
 
 
-//     let arr=[100,200,300,400,500];
-//     //push,pop,shift,unshift,splice
-//     // console.log(arr);
-//     // arr.push(900);
-//     // console.log(arr);
-//     // let x=arr.pop();
-//     // console.log(arr);
-//     // console.log('Removed ',x);
-// // console.log(arr);
-// //     arr.unshift(900);
-// //     console.log(arr);
-// //     let x=arr.shift();
-// //     console.log(arr);
-// console.log(arr);
-// //arr.splice(arr.length-1,1)
-// //console.log(arr);
-// arr.splice(1,2,23,45,56,78,80,90)
+    //     let arr=[100,200,300,400,500];
+    //     //push,pop,shift,unshift,splice
+    //     // console.log(arr);
+    //     // arr.push(900);
+    //     // console.log(arr);
+    //     // let x=arr.pop();
+    //     // console.log(arr);
+    //     // console.log('Removed ',x);
+    // // console.log(arr);
+    // //     arr.unshift(900);
+    // //     console.log(arr);
+    // //     let x=arr.shift();
+    // //     console.log(arr);
+    // console.log(arr);
+    // //arr.splice(arr.length-1,1)
+    // //console.log(arr);
+    // arr.splice(1,2,23,45,56,78,80,90)
 
-// console.log(arr);
+    // console.log(arr);
 
-//Iterators
-//forEach, filter, map
-let arr=[34,5,6,7]
-// arr.forEach(myLogic)
+    //Iterators
+    //forEach, filter, map
+    let arr = [34, 5, 6, 7]
+    // arr.forEach(myLogic)
 
-// function myLogic(item,index,array)
-// {
-//   console.log("My Logic called...")
+    // function myLogic(item,index,array)
+    // {
+    //   console.log("My Logic called...")
 
-// }
+    // }
 
-// arr.forEach(function(item,index,array){
+    // arr.forEach(function(item,index,array){
 
-// })
-//Filter
-//let result=[];
-// for(let i=0;i<arr.length;i++)
-// {
-//   if(arr[i]%2==0)
-//   result.push(arr[i]);
+    // })
+    //Filter
+    //let result=[];
+    // for(let i=0;i<arr.length;i++)
+    // {
+    //   if(arr[i]%2==0)
+    //   result.push(arr[i]);
 
-// }
+    // }
 
-// arr.forEach(function(item){
-//   if(item%2==0)
-//   result.push(item);
-// })
+    // arr.forEach(function(item){
+    //   if(item%2==0)
+    //   result.push(item);
+    // })
 
-// let result=arr.filter(function(item){
-//   if(item%2==0)
-//   return true;
+    // let result=arr.filter(function(item){
+    //   if(item%2==0)
+    //   return true;
 
-// })
+    // })
 
-// let result=[];
-// arr.forEach(function(item){
-//   result.push(item*2);
+    // let result=[];
+    // arr.forEach(function(item){
+    //   result.push(item*2);
 
-// })
+    // })
 
-let result=arr.map(function(item){
-  if(item%2==0)
-  return item*2;
-else
-return item;
+    // let result=arr.map(function(item){
+    //   if(item%2==0)
+    //   return item*2;
+    // else
+    // return item;
 
-})
+    // })
+
+    // console.log(result);
+
+    //Objects
+    // let cities=["ABC","XYZ","Test"];
+    // let temp=[23,34,36];
+    // let population=[1223,234324,45454]
+    //Object - Key-value pair
+    //let arrary=[];
+    let obj = { "name": "ABC", "temp": 23, population: 1223, "name": "Test", "total students": 100 };
+    console.log(obj["total students"]);
 
 
+    //let obj={};
+    //obj.name="Code";
+    //console.log(obj);
+    //obj.city="B";
+    //delete obj.temp;
 
-console.log(result);
+
+    //console.log(obj.name);
+    //console.log(obj["name"]);
+
+    //console.log(obj);
+
+    //1.
+    //let prop="name";
+    //console.log(obj[prop]);
+
+    //2. Special characters in keys
+
+    let person = {
+      name: "ABC",
+      age: 23,
+      marks: [420, 450],
+      address: { "home": "asdsad", "office": "asdsadsa" },
+      // getName:function(){
+      //   console.log(person.name);
+
+      // }
+      getName: gatherName
 
 
+    }
+
+    let person1 = {
+      name: "ABC1",
+      age: 25,
+      marks: [420, 450],
+      address: { "home": "asdsad", "office": "asdsadsa" },
+      // getName:function(){
+      //   console.log(person.name);
+
+      // }
+      getName: gatherName
+
+
+    }
+
+
+    function gatherName() {
+      console.log(this.name);
+
+
+    }
+    console.log(person.name, person.age)
+    person.marks.forEach(function (item) {
+      console.log(item);
+
+    })
+    console.log(person.address.home);
+    for (var key in person) {
+      console.log(key, person[key])
+
+
+    }
+    person1.getName();
+    person.getName();
 
 
 
