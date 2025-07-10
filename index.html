@@ -332,56 +332,53 @@ boolean =int
 
     //2. Special characters in keys
 
-    let person = {
-      name: "ABC",
-      age: 23,
-      marks: [420, 450],
-      address: { "home": "asdsad", "office": "asdsadsa" },
-      // getName:function(){
-      //   console.log(person.name);
+    // let person = {
+    //   name: "ABC",
+    //   age: 23,
+    //   marks: [420, 450],
+    //   address: { "home": "asdsad", "office": "asdsadsa" },
+    //   // getName:function(){
+    //   //   console.log(person.name);
 
-      // }
-      getName: gatherName
-
-
-    }
-
-    let person1 = {
-      name: "ABC1",
-      age: 25,
-      marks: [420, 450],
-      address: { "home": "asdsad", "office": "asdsadsa" },
-      // getName:function(){
-      //   console.log(person.name);
-
-      // }
-      getName: gatherName
+    //   // }
+    //   getName: gatherName
 
 
-    }
+    // }
+
+    // let person1 = {
+    //   name: "ABC1",
+    //   age: 25,
+    //   marks: [420, 450],
+    //   address: { "home": "asdsad", "office": "asdsadsa" },
+    //   // getName:function(){
+    //   //   console.log(person.name);
+
+    //   // }
+    //   getName: gatherName
 
 
-    function gatherName() {
-      console.log(this.name);
+    // }
 
 
-    }
-    console.log(person.name, person.age)
-    person.marks.forEach(function (item) {
-      console.log(item);
-
-    })
-    console.log(person.address.home);
-    for (var key in person) {
-      console.log(key, person[key])
+    // function gatherName() {
+    //   console.log(this.name);
 
 
-    }
-    person1.getName();
-    person.getName();
+    // }
+    // console.log(person.name, person.age)
+    // person.marks.forEach(function (item) {
+    //   console.log(item);
+
+    // })
+    // console.log(person.address.home);
+    // for (var key in person) {
+    //   console.log(key, person[key])
 
 
-
+    // }
+    // person1.getName();
+    // person.getName();
 
 
 
