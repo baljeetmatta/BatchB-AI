@@ -1,391 +1,54 @@
 <html>
+    <head>
+<style>
+    .format{
+        background-color: red;
+        padding:10px;
 
-<head>
-
-</head>
-
-<body>
-
-
-  <script>
-    "use strict"
-    //DATA TYPES (NUMBER, STRING,BOOLEAN)
-    //CONVERSION
-    //TYPE CASTING
-    //IMPLICIT, EXPLICIT
-    /*
-        int x;
-        float f= 3.6
-        x=f;
-    char x='a';
-    int y=x;
-    Explicit 
-
-
-    */
-    // var f=3.4;
-    // var x=Math.floor(f);
-    //  var x = "20.4";
-    // var y = 10;
-    //number+number=add
-    //String+string=concat
-    //string+number=concat
-    //parsing - as it is
-    //Integer,Float,Double- Wrapper Classes
-    //Unboxing, Boxing
-    //TypeConversion - Conversion from one datatype to another
-    //String -object->type
-    //Integer.parseInt
-    //new Integer(variable)
-    //JAVA Integer.parseInt("20.4");
-    /* 
-     var z=parseFloat(x)+y;//string+number
-
-      console.log(z);
-       console.log(testData);
-
-    
-    var  testData=10.2;
-     console.log(typeof testData);
-
-   var  testData="Code"
-     console.log(typeof testData);
-const Data=10;
-Data=20;
-Airthmetic, Relational, Logical, bitwise, comparision, Assignment
-a==b comparision ->Logical true/false 1/0 
-if(-7)
-cout<<"Hello";
-
-Java
-condition -> boolean true/false
-int boolean
-implicit
-boolean =int
-1. target type>source
-2.type must be compatible
-*/
-    //      var stringData='Demo';
-    //    console.log(stringData,typeof stringData);
-    //     var a=10;
-    //     var b=20;
-    //     //var string="the "+b+" result "+a+" is correct";
-    //     var string=`the ${b} result ${a} is correct`;
-
-    //     var data="This is a string";
-    //    // data="Changed";
-    //     console.log(data);
-
-    //  var  pos=data.indexOf("s",0);
-    //  console.log(pos);
-    //  pos=data.indexOf("s",pos+1);
-    //     console.log(pos);
-    //     pos=data.lastIndexOf("s");
-    //     console.log(pos);
-    //     console.log(data.charAt(1))
-    //     if(data.charAt(1)>='a')
-    //     console.log("Hello")
-    //control structrues
-    /*
-                1.Sequence Control 
-                2.Decision Control/transfer of control
-                    if, if else, else if, switch, ? :
-                3.Loop Control/Iteration/Repetitive
-                    for, while, do-while break,continue;
-    
-                    1. String
-                       Valid Email Address
-                       a. @
-                       b. @ must not be the first character
-                       c. Last 3/4 . .com, .in
-                    2. Position of s (3) 
-                        search, all positions
-                        // fact, reverse of any digit 3456 ->
-    
-                        returntype functionname(arguements)
-    
-    */
-    // display();
-    // function display()
-    // {
-    //   console.log("Display called");
-
-
-    // }
-    // display();
-    //display();
-    //int sum(int x, int y)
-    /*
-    function sum()
-    {
-      x=arguments[0];
-      y=arguments[1];
-      console.log(arguments[2]);
-    
-      console.log(x,y);
     }
-    sum(3,4,5);
-    */
-    // function display() {
-    //   console.log("Display called...");
+</style>
+    </head>
+    <body>
+         
+        <div class="x">
+        Befor
+      
+        After
+        </div>
+        <div>
+        Befor
+      
+        After
+        </div>
+        <div class="x">
+        Befor
+      
+        After
+        </div>
+        <p >Demo </p>
+        <p id="pContent">
+       <b>Paragraph content</b> 
+        </p>
 
-    // }
-    // //display();
-    // //console.log(display());
-    // //let result=display();
-    // //console.log(result);
-    // function sum(x, y) {
-    //   return x + y;
+        <div>
+        Befor
+      
+        After
+        </div>
+        <!-- <img src="images/1.jpg" width="150" onmouseover="this.src='images/2.jpg';" onmouseout="this.src='images/1.jpg';"/> -->
 
-    // }
-    //let result=sum(3,4);
-    //console.log(result);
-    //console.log(sum(3,40));
-    // let a=10;
-    // let b=sum;
-    // console.log(b);
+        <img src="images/1.jpg" width="200" id="bigImage">
+        <div>
+            <img src="images/1.jpg" width="100" onmouseOver="changeImage(this)">
+            <img src="images/2.jpg" width="100" onmouseOver="changeImage(this)">
+            <img src="images/3.jpg" width="100" onmouseOver="changeImage(this)">
+            <img src="images/4.jpg" width="100" onmouseOver="changeImage(this)">
 
-    // console.log(b(3,4));
-    // let c=function(){
-    //   console.log("C called...")
-    // }
-    // c();
-    //CALLBACK
-    /*
-    function carService(x){
-    
-      console.log("data a...");
-    
-      x();
-    
-    }
-    function carWash()
-    {
-    
-      console.log("Washing...")
-    }
-    function carDelivery()
-    {
-    console.log("Delivery...")
-    }
-    carService(carWash);
-    
-    carService(carDelivery);
-    */
-    //Arrays
-    /*
-      int arr[5]; compile
-      int arr[]=new int[5]; run-time
-    0-4
-    a[2];
-    *(a+2)
-    a[5]
-    *(a+5)
-    
-    
-      int arr[]={34,4,5,6,6};run-time
-    
-    
-    */
-    //let a=10;
-    //let arr=[3,40,50,60,"name",34.5];
-    //let arr=[100,200,300,400];
-    // let arr = [100, 200, 300, 400, 900];
-    // let arr1 = [600, 700, 300, 400, 900];
-    // let arr2 = [600, 700, 300, 400, 900];
+        </div>
 
-    // //arr[70]=10;
-    // function myLogic(item,index,array)
-    // {
-    //   console.log("My Logic Called...",item,index)
+         <script src="js/script.js">
+         
+        </script>
 
-    // }
-    // function mySecondLogic()
-    // {
-
-    // }
-    // print(arr,myLogic);
-    // print(arr1,myLogic);
-    // //print(arr1,mySecondLogic);
-
-
-
-
-    // // for (let i = 0; i < arr.length; i++) {
-    // //   console.log(arr[i]);
-
-    // // }
-    // // for (let i = 0; i < arr1.length; i++) {
-    // //   console.log(arr1[i]);
-
-    // // }
-    // // for (let i = 0; i < arr2.length; i++) {
-    // //   console.log(arr2[i]);
-
-    // // }
-    // function print(array,callback) {
-    //   for (let i = 0; i < array.length; i++) {
-    //     callback(array[i],i,array);
-    //    // console.log(array[i]);
-
-    //   }
-    // }
-    // //console.log(arr)
-
-
-
-    //     let arr=[100,200,300,400,500];
-    //     //push,pop,shift,unshift,splice
-    //     // console.log(arr);
-    //     // arr.push(900);
-    //     // console.log(arr);
-    //     // let x=arr.pop();
-    //     // console.log(arr);
-    //     // console.log('Removed ',x);
-    // // console.log(arr);
-    // //     arr.unshift(900);
-    // //     console.log(arr);
-    // //     let x=arr.shift();
-    // //     console.log(arr);
-    // console.log(arr);
-    // //arr.splice(arr.length-1,1)
-    // //console.log(arr);
-    // arr.splice(1,2,23,45,56,78,80,90)
-
-    // console.log(arr);
-
-    //Iterators
-    //forEach, filter, map
-    let arr = [34, 5, 6, 7]
-    // arr.forEach(myLogic)
-
-    // function myLogic(item,index,array)
-    // {
-    //   console.log("My Logic called...")
-
-    // }
-
-    // arr.forEach(function(item,index,array){
-
-    // })
-    //Filter
-    //let result=[];
-    // for(let i=0;i<arr.length;i++)
-    // {
-    //   if(arr[i]%2==0)
-    //   result.push(arr[i]);
-
-    // }
-
-    // arr.forEach(function(item){
-    //   if(item%2==0)
-    //   result.push(item);
-    // })
-
-    // let result=arr.filter(function(item){
-    //   if(item%2==0)
-    //   return true;
-
-    // })
-
-    // let result=[];
-    // arr.forEach(function(item){
-    //   result.push(item*2);
-
-    // })
-
-    // let result=arr.map(function(item){
-    //   if(item%2==0)
-    //   return item*2;
-    // else
-    // return item;
-
-    // })
-
-    // console.log(result);
-
-    //Objects
-    // let cities=["ABC","XYZ","Test"];
-    // let temp=[23,34,36];
-    // let population=[1223,234324,45454]
-    //Object - Key-value pair
-    //let arrary=[];
-    let obj = { "name": "ABC", "temp": 23, population: 1223, "name": "Test", "total students": 100 };
-    console.log(obj["total students"]);
-
-
-    //let obj={};
-    //obj.name="Code";
-    //console.log(obj);
-    //obj.city="B";
-    //delete obj.temp;
-
-
-    //console.log(obj.name);
-    //console.log(obj["name"]);
-
-    //console.log(obj);
-
-    //1.
-    //let prop="name";
-    //console.log(obj[prop]);
-
-    //2. Special characters in keys
-
-    // let person = {
-    //   name: "ABC",
-    //   age: 23,
-    //   marks: [420, 450],
-    //   address: { "home": "asdsad", "office": "asdsadsa" },
-    //   // getName:function(){
-    //   //   console.log(person.name);
-
-    //   // }
-    //   getName: gatherName
-
-
-    // }
-
-    // let person1 = {
-    //   name: "ABC1",
-    //   age: 25,
-    //   marks: [420, 450],
-    //   address: { "home": "asdsad", "office": "asdsadsa" },
-    //   // getName:function(){
-    //   //   console.log(person.name);
-
-    //   // }
-    //   getName: gatherName
-
-
-    // }
-
-
-    // function gatherName() {
-    //   console.log(this.name);
-
-
-    // }
-    // console.log(person.name, person.age)
-    // person.marks.forEach(function (item) {
-    //   console.log(item);
-
-    // })
-    // console.log(person.address.home);
-    // for (var key in person) {
-    //   console.log(key, person[key])
-
-
-    // }
-    // person1.getName();
-    // person.getName();
-
-
-
-
-
-  </script>
-
-</body>
-
+    </body>
 </html>
