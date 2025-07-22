@@ -120,11 +120,38 @@
 
 // result(20);
 //OVERLOADING
-function sum(x,y)
+// function sum(x,y)
+// {
+//     console.log("Multiple Arguments...")
+// }
+
+
+// sum(3);
+// sum(3,4);
+//Async Prog.
+//callback functions
+
+//Event Loop
+
+//Call Stack
+//Async Block ->aysnc /fetch browser API
+function test()
 {
-    console.log("Multiple Arguments...")
+    console.log("Test called...")
+   // setTimeout(test,1000);
+
+}
+function demo()
+{
+    console.log("Demo called..");
 }
 
+//setInterval(test,1000);
+//let id=setTimeout(test,3000)
 
-sum(3);
-sum(3,4);
+//clearTimeout(id);
+
+//test();
+demo();
+
+
