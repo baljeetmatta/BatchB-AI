@@ -1,0 +1,82 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    GET/POST
+    existing browser->server
+    Addressbar
+    1. Limit 2Kb
+    2. Security
+    3. REliabilty
+    POST
+    1. No Limit
+    2. Security
+    3. Reliabitlyt
+    <form action="/Signup" method="post" id="form1" >
+    
+    <!-- <form action="/Signup" method="post" id="form1" onsubmit="return validate();"> -->
+        <div id="errorDiv"></div>
+        <input type="text" name="username" id="username" />
+        <input type="password" name="password" id="password" />
+        <input type="submit" id="submitBtn" value="Login" />
+
+    </form>
+    <script>
+        const form1 = document.querySelector("#form1");
+        const username = document.querySelector("#username");
+        const password = document.querySelector("#password");
+        const submitBtn = document.querySelector("#submitBtn");
+          const errorDiv = document.querySelector("#errorDiv");
+        submitBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+            let user = username.value;
+            if (user.length < 4) {
+                //alert("Please specify the username");
+                errorDiv.innerHTML="Specify the username";
+
+                return;
+            }
+            let pos=user.indexOf("@");
+            if(pos==0||pos==-1)
+            {
+                 errorDiv.innerHTML="Not a valid email";
+
+                return;
+            }
+
+
+            form1.submit();
+
+
+        })
+function validate()
+{
+    let user = username.value;
+            if (user.length < 4) {
+                //alert("Please specify the username");
+                errorDiv.innerHTML="Specify the username";
+
+                return false;
+            }
+            let pos=user.indexOf("@");
+            if(pos==0||pos==-1)
+            {
+                 errorDiv.innerHTML="Not a valid email";
+
+                return false;
+            }
+return true;
+
+           // form1.submit();
+
+}
+
+    </script>
+
+</body>
+
+</html>
