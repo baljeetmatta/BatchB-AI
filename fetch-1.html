@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <script>
+            const fetchCode=async ()=>{
+            let obj={
+                name:"Code",
+                job:"Trainer"
+            }
+            // fetch("https://reqres.in/api/users",{
+            //     method:"POST",
+            //     headers:{
+            //         "x-api-key":"reqres-free-v1",
+            //         "content-type":"application/json"
+            //     },
+            //     body:JSON.stringify(obj)
+            // })//return promise
+            // .then((response)=>{
+            //     //console.log(response);
+            //     return response.json();//promise
+
+            // }).then((data)=>{
+            //     console.log(data);
+            // })
+
+         let response= await  fetch("https://reqres.in/api/users",{
+                method:"POST",
+                headers:{
+                    "x-api-key":"reqres-free-v1",
+                    "content-type":"application/json"
+                },
+                body:JSON.stringify(obj)
+            })//return promise
+            //HALT
+            let data=await response.json();
+            console.log(response);
+            console.log(data);
+
+            console.log("Process..")
+        }
+        fetchCode();
+
+            </script>
+
+    </body>
+</html>
